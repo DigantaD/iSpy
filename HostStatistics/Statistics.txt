@@ -1,4 +1,0 @@
-This is the file to store all the Host addresses of the particular network or domain. 
- Copyright: Diganta Dutta (2018)
-
-
