@@ -1,4 +1,0 @@
-This is the file to store all the ping request statistics of a particular network. 
- Copyright: Diganta Dutta (2018)
-
-
