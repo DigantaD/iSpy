@@ -11,17 +11,6 @@ public class TraceRouteIP {
 
 		String route = executeCommand(command);
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/TraceRoute/TraceIP.txt"))) {
-
-			bw.write(route + "\n");
-			bw.newLine();
-			bw.flush();
-
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
-
 		return route;
 	}
 

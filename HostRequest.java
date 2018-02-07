@@ -33,17 +33,6 @@ public class HostRequest {
 
 				list_output = ip + "\n";
 			}
-
-			try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/HostStatistics/Statistics.txt"))) {
-
-				bw.write(list_output + "\n");
-				bw.newLine();
-				bw.flush();
-		
-			} catch (IOException e) {
-
-				e.printStackTrace();
-			}
 			
 		} else {
 

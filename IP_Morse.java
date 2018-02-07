@@ -44,18 +44,6 @@ public class IP_Morse extends Main {
 			}
 		}
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/MorseCodes/Morse_Codes.txt"))) {
-
-			bw.write(encoded + "\n");
-			bw.newLine();
-			bw.flush();
-		
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
-
-
 		return encoded;		
 	}
 

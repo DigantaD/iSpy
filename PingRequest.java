@@ -11,17 +11,6 @@ public class PingRequest {
 
 		String statistics = executeCommand(command);
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/PingStatistics/Statistics.txt"))) {
-
-			bw.write(statistics + "\n");
-			bw.newLine();
-			bw.flush();
-		
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
-
 		return statistics;
 	}
 

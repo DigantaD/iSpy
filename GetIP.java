@@ -27,17 +27,6 @@ public class GetIP extends Main {
 			System.exit(2);
 		}
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/IP/IPv4.txt"))) {
-
-			bw.write(address.getHostAddress() + "\n");
-			bw.newLine();
-			bw.flush();
-		
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
-
 
 		return address.getHostAddress();
 	}

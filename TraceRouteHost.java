@@ -16,17 +16,6 @@ public class TraceRouteHost {
 			route_result = "Route trace for " + host + ": \n\n" + route + "\n\n\n";
 		}
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/TraceRoute/TraceHost.txt"))) {
-
-			bw.write(route_result + "\n");
-			bw.newLine();
-			bw.flush();
-
-		} catch(IOException e) {
-
-			e.printStackTrace();
-		}
-
 		return route_result;
 	}
 

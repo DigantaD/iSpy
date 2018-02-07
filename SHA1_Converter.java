@@ -30,17 +30,6 @@ public class SHA1_Converter extends Main {
 
 		String encryption = buf.toString();
 
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/home/codebuster/ProjectLab_Trial/Hash/HashFiles.txt"))) {
-
-			bw.write(encryption + "\n");
-			bw.newLine();
-			bw.flush();
-		
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
-
 		return encryption;
 	}
 }
