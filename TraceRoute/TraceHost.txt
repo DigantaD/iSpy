@@ -1,0 +1,4 @@
+This file contains the route taken by a particular ping command on the host address to take place. 
+ Copyright: Diganta Dutta (2018).
+
+

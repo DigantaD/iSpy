@@ -1,0 +1,4 @@
+This is the file to store all the incoming Hash SHA-256 Encryption Files. 
+ Copyright: Diganta Dutta (2018).
+
+
