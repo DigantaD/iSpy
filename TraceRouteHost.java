@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class TraceRouteHost {
+public class TraceRouteHost extends Main {
 
 	String route_result = "";
 

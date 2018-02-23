@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class PingRequest {
+public class PingRequest extends Main {
 
 	public String ping(String url) {
 

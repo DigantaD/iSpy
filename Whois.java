@@ -1,22 +1,22 @@
 import java.util.*;
 import java.io.*;
 
-public class TraceRouteIP extends Main {
+public class Whois extends Main {
 
-	public String trace_ip(String ip) {
+	public String whois_ops(String url) {
 
-		String network_ip = ip;
+		String n_url = url.substring(4);
 
-		String command = "traceroute " + network_ip;
+		String command = "whois " + n_url;
 
-		String route = executeCommand(command);
+		String whois_results = executeCommand(command);
 
-		return route;
+		return whois_results;
 	}
 
 	public String executeCommand(String command) {
 
-		StringBuffer route = new StringBuffer();
+		StringBuffer whois_results = new StringBuffer();
 
 		Process p;
 
@@ -31,7 +31,7 @@ public class TraceRouteIP extends Main {
 
 			while ((line = reader.readLine())!=null) {
 
-				route.append(line + "\n");
+				whois_results.append(line + "\n");
 			}
 		
 		} catch (Exception e) {
@@ -39,7 +39,7 @@ public class TraceRouteIP extends Main {
 			e.printStackTrace();
 		}
 
-		return route.toString();
+		return whois_results.toString();
 
 	}
 }

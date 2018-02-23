@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.IOException;
 
-public class HostRequest {
+public class HostRequest extends Main {
 
 	private static final String IPADDRESS_PATTERN = "([01]?\\d\\d?|2[0-4]\\d|25[0-5])" + "\\.([01]?\\d\\d?|25[0-5])" + "\\.([01]?\\d\\d?|25[0-5])" + "\\.([01]?\\d\\d?|25[0-5])";
 

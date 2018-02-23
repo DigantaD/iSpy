@@ -5,22 +5,20 @@ import java.net.UnknownHostException;
 
 public class GetIP extends Main {
 
-	String url="",url1="";
+	String url="";
 	
 	public String Ip_Send() {
 
 		InetAddress address = null;
-		InetAddress address1 = null;
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter URL/Network Address to be analyzed: \n1. With World Wide Web \n2. Without World Wide Web\n");
+		System.out.print("Enter URL/Network Address to be analyzed: ");
 		url = sc.next();
-		url1 = sc.next();
 
 		try {
 
 			address = InetAddress.getByName(url);
-			address1 = InetAddress.getByName(url1);
+
 		} catch (UnknownHostException e) {
 
 			System.out.println("Invalid or Unknown Address.");
@@ -31,13 +29,9 @@ public class GetIP extends Main {
 		return address.getHostAddress();
 	}
 
-	public String url_send() {
+	public String Url_Send() {
 
 		return url;
 	}
 
-	public String url1_send() {
-
-		return url1;
-	}
 }
