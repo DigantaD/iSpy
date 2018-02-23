@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Display extends Main {
 
-	public void results(String url, String ip, String morse, String encryption, String decoded_ip, String statistics, List<String> hoststatistics, String ip_route, String host_route, String whois_results) {
+	public void results(String url, String ip, String morse, String encryption, String decoded_ip, String statistics, List<String> hoststatistics, String ip_route, String host_route, String whois_results, String ns_results) {
 
 		System.out.println("------------------------------- *** R     E     S     U     L     T     S *** -------------------------------");
 
@@ -17,5 +17,6 @@ public class Display extends Main {
 		System.out.println("IP Route: \n" + ip_route);
 		System.out.println("Host Route: \n" + host_route);
 		System.out.println("Whois Results: \n" + whois_results);
+		System.out.println("Netstat Results: \n" + ns_results);
 	}
 }

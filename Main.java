@@ -42,8 +42,11 @@ public class Main {
 		Whois wh = new Whois();
 		String whois_results = wh.whois_ops(url);
 
+		Netstat ns = new Netstat();
+		String ns_results = ns.netstat_ops(url);
+
 		Display disp = new Display();
-		disp.results(url, ip, morse, encryption, decoded_ip, statistics, hoststatistics, ip_route, host_route, whois_results);
+		disp.results(url, ip, morse, encryption, decoded_ip, statistics, hoststatistics, ip_route, host_route, whois_results, ns_results);
 
 	}
 }
