@@ -25,6 +25,13 @@ public class Main {
 		sha1hash = md.digest();
 		String encryption = sha.convert(sha1hash);
 
+		File file = new File("/home/codebuster/iSpy/Encryption.txt");
+
+		FileWriter writer = new FileWriter(file);
+		writer.write(encryption);
+		writer.flush();
+		writer.close();
+
 		Morse_IP obj = new Morse_IP();
 		String decoded_ip = obj.code_decode(morse);
 		PingRequest pr = new PingRequest();
